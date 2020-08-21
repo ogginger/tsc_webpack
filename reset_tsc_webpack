@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./rm_tsc_webpack
+./run_tsc_webpack

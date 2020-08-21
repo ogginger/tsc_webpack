@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker stop tsc_webpack
+docker rm tsc_webpack
