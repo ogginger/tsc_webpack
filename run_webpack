@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run -ti -v $(pwd):/home --name tsc_webpack tsc_webpack
+docker run -ti -v $(pwd):/home --name webpack webpack
