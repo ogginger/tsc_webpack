@@ -9,6 +9,10 @@ run apt-get install -y nodejs
 
 run npm install -g webpack webpack-cli
 
-volume /home
+run useradd josh
 
-workdir /home
+user josh
+
+volume /home/josh
+
+workdir /home/josh

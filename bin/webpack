@@ -1,4 +1,3 @@
 #!/bin/bash
-docker stop webpack
-docker rm webpack
-docker run --rm -it -v $(pwd):/home --name webpack webpack webpack --config webpack.config.js --progress --display-modules "$@"
+docker stop webpack && docker rm webpack
+docker run --rm -it -v $(pwd):/home/josh --user $(id -u):$(id -g) --name webpack webpack webpack --config webpack.config.js --progress "$@"
